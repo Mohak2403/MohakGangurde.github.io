@@ -129,6 +129,10 @@ span{
 
 }
 
+.home-content p{
+    font-size: 1.6rem;
+}
+
 .home-img{
     border-radius: 50%;
 
