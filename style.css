@@ -68,7 +68,8 @@ nav a.active{
 @media(max-width:995px){
     nav{
         position: absolute;
-        top: 100%;
+        display: none;
+        top: 0;
         right: 0;
         width: 40%;
         border-left: 3px solid #b74b4b;
@@ -159,7 +160,7 @@ span{
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: white;
+    color: #b74b4b;
 
 }
 
@@ -239,5 +240,36 @@ span{
     }
     81%, 100%{
         content: "Script Writer";
+    }
+}
+
+@media(max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    
+    }
+
+    .home .home-content h3{
+        font-size: 2.5rem;
+        
+    }
+
+
+    .home-content h1{
+        font-size: 5rem;
+
+    }
+
+    .home-img img{
+        width: 70vh;
+        margin-top: 4rem;
+         
     }
 }
