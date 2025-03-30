@@ -387,7 +387,7 @@ th h1 {
 
 .hi {
     height: auto;
-    width: 100%; /* Increased width */
+    width: 100%;
     font-size: 2rem;
     justify-content: center;
     align-items: start;
@@ -396,8 +396,8 @@ th h1 {
     border-radius: 5px;
     box-shadow: 0px 0px 10px #b74b4b;
     transition: 0.3s ease;
-    margin: 2rem auto; /* Changed to auto to center horizontally */
-    display: block; /* added display block to ensure margin auto works */
+    margin: 2rem auto;
+    display: block;
 }
 
 footer {
@@ -453,11 +453,23 @@ footer {
     box-shadow: 0 0 25px #b74b4b;
 }
 
-@media (max-width: 995px) {
+@media (max-width: 768px) {
     footer {
-        padding: 1rem 2%;
-        display: none;
+        padding: 20px; /* Increase padding for better spacing */
+        text-align: center; /* Center text on mobile */
+    }
 
+    .footer-content {
+        flex-direction: column; /* Stack text and social icons */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .footer-social {
+        margin-top: 10px; /* Add spacing between text and icons */
+    }
+
+    .footer-social a {
+        margin: 0 10px; /* Adjust spacing between social icons */
     }
 }
 
@@ -568,7 +580,7 @@ footer {
     min-height: 190px;
 }
 
-.contact-info-block h3{
+.contact-info-block h3 {
     font-size: 2.5rem;
 }
 
@@ -614,6 +626,17 @@ footer {
     .contact-info-block,
     .contact-form-block {
         width: 100%;
+        margin-bottom: 1.5rem; /* Spacing between blocks */
+        padding: 1.5rem; /* Reduce padding inside blocks */
+    }
+
+    .detail-item {
+        padding: 1rem; /* Reduce padding inside detail items */
+    }
+
+    .contact-form-block input,
+    .contact-form-block textarea {
+        padding: 1rem; /* Reduce padding in form elements */
     }
 }
 
@@ -625,7 +648,6 @@ footer {
     width: 70%;
     margin: 0 auto;
 }
-
 
 .hobbies-interests .hobbies-block h2,
 .hobbies-interests .interests-block h2 {
@@ -645,6 +667,6 @@ footer {
 }
 
 #cont.contact {
-    height: 80%;
-    padding-bottom: 0; /* Or padding-bottom: 1rem; */
+    height: auto; /* Changed from 80% to auto */
+    padding-bottom: 2rem; /* Added padding to ensure spacing */
 }
