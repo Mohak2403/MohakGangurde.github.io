@@ -670,3 +670,26 @@ footer {
     height: auto; /* Changed from 80% to auto */
     padding-bottom: 2rem; /* Added padding to ensure spacing */
 }
+
+
+
+@media (max-width: 768px) {
+    #skills table {
+        display: block; /* Treat table like a block */
+    }
+
+    #skills tr {
+        display: block; /* Treat table rows like blocks */
+    }
+
+    #skills td {
+        display: block; /* Treat table cells like blocks */
+        width: 100%; /* Full width on mobile */
+        box-sizing: border-box; /* Include padding/border in width */
+        margin-bottom: 20px; /* Add spacing between skill blocks */
+    }
+
+    #skills .container {
+        width: 100%; /* Full width of cell */
+    }
+}
