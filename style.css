@@ -456,6 +456,8 @@ footer {
 @media (max-width: 995px) {
     footer {
         padding: 1rem 2%;
+        display: none;
+
     }
 }
 
